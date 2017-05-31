@@ -1,23 +1,25 @@
 {
-  "name": "koalla_holla",
+  "name": "koalaholla",
   "version": "1.0.0",
-  "description": "This must stop: --------------- [![Nevar again](http://img.youtube.com/vi/tOHtuPFUYU/0.jpg)](http://www.youtube.com/watch?v=tOHtuPFUYU)",
-  "main": "index.js",
+  "description": "This must stop: --------------- ![Nevar again](https://i.makeagif.com/media/8-22-2014/GO_DT4.gif)",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devjanaprime/koalaHolla.git"
+    "url": "git+https://github.com/moiscmigu/koalaHolla.git"
   },
-  "author": "@devjana",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/devjanaprime/koalaHolla/issues"
+    "url": "https://github.com/moiscmigu/koalaHolla/issues"
   },
-  "homepage": "https://github.com/devjanaprime/koalaHolla#readme",
+  "homepage": "https://github.com/moiscmigu/koalaHolla#readme",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "pg": "^6.2.3"
   }
 }

@@ -1,0 +1,29 @@
+1. added to the database. We made a new table and entered in the information.
+2.required pg in server.js
+3.created a config variable
+4. made a new pool variable
+5.in out GET /koalas function
+```
+pool.connect(function(err, connection, done) {
+    if (err) {
+        console.log('error connecting to db');
+        done();
+        res.send('error');
+    }
+    else{
+        console.log('connect to db');
+        var koalaArray = [];
+        var resultSet = connection.query('SELECT * FROM koalatable');
+        resultSet.on('row', function(row) {
+            koalaArray.push(row);
+        });
+
+        resultSet.on('end', function() {
+            done();
+            res.send(koalaArray);
+        });
+    }//end of else
+
+
+});//end of pool connect
+```
